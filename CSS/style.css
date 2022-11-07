@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyan-2: hsl(179, 82%, 74%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    background-color:  var(--Light-Gray);
+}
+
+.container {
+    width: 700px;
+}
+
+.heading, .pricing, .about-us {
+    padding: 1.5rem;
+}
+
+.heading {
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.heading h1 {
+    color: var(--Cyan);
+}
+
+.heading h2 {
+    font-size: 1.2rem;
+    color: var(--Bright-Yellow);
+}
+
+.description {
+    margin-right: 5rem;
+}
+
+.description p {
+    color: var(--Grayish-Blue);
+    line-height: 2rem;
+}
+
+.boxes {
+    display: flex;
+}
+
+.pricing {
+    width: 50%;
+    background-color: var(--Cyan);
+    border-bottom-left-radius: 5px; 
+}
+
+.pricing h3, .price p, .access, .button a {
+    color: var(--Light-Gray);
+}
+
+.pricing h3 {
+    font-size: 1.4rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin: -2rem 0;
+}
+
+.price p {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.price span {
+    color: rgb(227,235,243);
+}
+
+.access {
+    font-size: 1.2rem;
+}
+
+.button {
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.button a {
+    text-decoration: none;
+    padding: 1rem 7.36rem;
+    border-radius: 5px;
+    background-color: var(--Bright-Yellow);
+}
+
+.about-us {
+    width: 50%;
+    background-color: rgba(74,190,189,255);
+    border-bottom-right-radius: 5px; 
+}
+
+.about-us h3 {
+    color: var(--Light-Gray);
+    font-size: 1.4rem;
+}
+
+.about-us-description {
+    color: rgb(227,235,243);
+    margin-right: 7rem;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 5rem;
+    }
+
+    .container {
+        width: 350px;
+    }
+
+    .heading h1 {
+        font-size: 1.6em;
+    }
+
+    .heading h2 {
+        font-size: 1em;
+    }
+
+    .description {
+        margin-right: 0;
+    }
+
+    .boxes {
+        display: block;
+    }
+
+    .pricing, .about-us {
+        width: 86%;
+    }
+
+    .pricing {
+        border-bottom-left-radius: 0;
+    }
+
+    .pricing h3 {
+        font-size: 1.2rem;
+    }
+
+    .access {
+        font-size: 1rem;
+    }
+
+    .button {
+        margin-bottom: 1rem;
+    }
+
+    .about-us {
+        border-bottom-left-radius: 5px;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    body {
+        padding: 5rem;
+    }
+
+    .container {
+        width: 350px;
+    }
+
+    .heading h1 {
+        font-size: 1.6em;
+    }
+
+    .heading h2 {
+        font-size: 1em;
+    }
+
+    .description {
+        margin-right: 0;
+    }
+
+    .boxes {
+        display: block;
+    }
+
+    .pricing, .about-us {
+        width: 86%;
+    }
+
+    .pricing {
+        border-bottom-left-radius: 0;
+    }
+
+    .pricing h3 {
+        font-size: 1.2rem;
+    }
+
+    .access {
+        font-size: 1rem;
+    }
+
+    .button {
+        margin-bottom: 1rem;
+    }
+
+    .about-us {
+        border-bottom-left-radius: 5px;
+    }
+  }
